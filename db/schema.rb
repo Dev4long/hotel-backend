@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2021_06_17_190332) do
 
   create_table "rooms", force: :cascade do |t|
     t.integer "all_hotel_id"
+    t.string "name"
     t.integer "price"
     t.string "image"
     t.boolean "room_service"
