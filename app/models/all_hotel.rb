@@ -1,3 +1,3 @@
 class AllHotel < ApplicationRecord
-    has_many :rooms
+   has_many :rooms
 end

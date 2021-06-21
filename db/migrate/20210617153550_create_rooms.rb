@@ -1,7 +1,7 @@
 class CreateRooms < ActiveRecord::Migration[6.1]
   def change
     create_table :rooms do |t|
-      t.integer :hotel_id
+      t.integer :all_hotel_id
       t.integer :price
       t.string :image
       t.boolean :room_service
