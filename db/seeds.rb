@@ -38,8 +38,8 @@ Room.create(name: "Gold Standard", all_hotel_id: AllHotel.fifth.id, price: 150, 
 Room.create(name: "Platnium Standard", all_hotel_id: AllHotel.fifth.id, price: 200, image: "https://i.pinimg.com/originals/64/40/4f/64404fb92bfa2931fe33f388ce0daf54.jpg", room_service: true, fitness_center: true, pool: true, wifi: true, balcony: true, bed_size: "King", availability: true)
 
 
-Stay.create(user_id: User.first.id, room_id: Room.first.id, start_date: "06-23-2021", end_date: "06-24-2021")
-Stay.create(user_id: User.second.id, room_id: Room.second.id, start_date: "06-25-2021", end_date: "06-26-2021")
+# Stay.create(user_id: User.first.id, room_id: Room.first.id, start_date: "06-23-2021", end_date: "06-24-2021")
+# Stay.create(user_id: User.second.id, room_id: Room.second.id, start_date: "06-25-2021", end_date: "06-26-2021")
 
 
 puts "done"
