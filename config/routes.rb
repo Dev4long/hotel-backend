@@ -7,6 +7,9 @@ Rails.application.routes.draw do
     resources :stays, only: [:index, :create]
     resources :users, only: [:index]
     resources :all_hotels, only: [:index]
+
+    post "/signup", to: "users#create"
+    post "/login", to: "users#login"
     
     end
   end 
