@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   namespace :api do
   namespace :v1 do 
 
-    resources :rooms, only: [:index]
-    resources :stays, only: [:index, :create]
+    resources :rooms, only: [:index, :destroy]
+    resources :stays, only: [:index, :create, :destroy]
     resources :users, only: [:index, :create]
     resources :all_hotels, only: [:index]
 
