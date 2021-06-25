@@ -15,6 +15,12 @@ class Api::V1::StaysController < ApplicationController
          end
     end
 
+    def destroy
+        stay = Stay.find(params[:id])
+        stay.destroy
+        render json: {message: "Room is deleted!!"}
+    end
+
     private
     def stays_params
         params.permit(:user_id, :room_id, :start_date, :end_date)
