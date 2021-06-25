@@ -18,7 +18,11 @@ class Api::V1::StaysController < ApplicationController
     def destroy
         stay = Stay.find(params[:id])
         stay.destroy
+<<<<<<< HEAD
         render json: {message: "Room is deleted!!"}
+=======
+        render json: {message: "Stay is deleted"}
+>>>>>>> 4af60e00a4195a77fd7955657ccbe151c5dc1213
     end
 
     private
